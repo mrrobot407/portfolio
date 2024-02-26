@@ -212,13 +212,15 @@ font-size: 1rem;
 .card{ 
 background-color: #f8fae5 !important;
 border-radius: 10px !important;
-    border:none;
+    border:none !important;
+    outline:none !important;
 }
 .btn{
     width: 230px;
     background-color: #482121 !important;
     border-radius: 10px !important;
-    border :none;
+    border:none !important;
+    outline:none !important;
 }
 .section-5-head{
     font-size: 2.5rem;
