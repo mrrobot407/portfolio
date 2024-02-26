@@ -210,13 +210,15 @@ font-size: 1rem;
     align-items: center;
 } */
 .card{ 
-background-color: #fe905f !important;
+background-color: #f8fae5 !important;
 border-radius: 10px !important;
+    border:none;
 }
 .btn{
     width: 230px;
-    background-color: #40cab5 !important;
+    background-color: #482121 !important;
     border-radius: 10px !important;
+    border :none;
 }
 .section-5-head{
     font-size: 2.5rem;
