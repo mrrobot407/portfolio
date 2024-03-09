@@ -12,6 +12,10 @@ body{
     overflow-x: hidden;
    
 }
+
+
+
+
 body , html{
     
     overflow-x: hidden;
@@ -21,7 +25,7 @@ body , html{
     font-family: "Poppins", sans-serif !important;
 }
 .navbar{
-    background-color: #fe905f !important; }
+    background-color: rgb(253, 216, 53) !important; }
 
 .section-1{
     background-color: #fe905f;
@@ -36,8 +40,10 @@ font-size: 1rem;
 }
 .section-2{
     background-color: #f0f0e6;
-    
-  
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section-4{
     background-color: #f0f0e6;
@@ -47,7 +53,7 @@ font-size: 1rem;
 }
 
 .section-3{
-    background-color: #40cab5;
+    background-color: #fe905f;
 }
 /* color */
 .whitecolour{
@@ -68,10 +74,11 @@ font-size: 1rem;
   }
 .navbar-nav a {
     text-decoration: none !important;
-    color: #f0f0e6 !important;
+    color: #141413 !important;
     font-size: 1.1rem !important;
     padding: 0.3rem !important;
     font-family: "Poppins", sans-serif;
+    font-weight: 600;
 
     
   }
@@ -173,7 +180,7 @@ font-size: 1rem;
   
   .bar .progress-line span {
     position: absolute;
-    background: #fe905f;
+    background: #221f1d;
     height: 100%;
     border-radius: 10px;
     transform: scaleX(0);
@@ -210,17 +217,13 @@ font-size: 1rem;
     align-items: center;
 } */
 .card{ 
-background-color: #f8fae5 !important;
-border-radius: 10px !important;
-    border:none !important;
-    outline:none !important;
+  background: linear-gradient(45deg, rgba(#6D80FE,1) 0%, rgba(#23D2FD,1) 100%) !important;
+	box-shadow: 0 5px 20px rgba(#23D2FD,.3) !important;
 }
 .btn{
     width: 230px;
-    background-color: #482121 !important;
+    background-color: #40cab5 !important;
     border-radius: 10px !important;
-    border:none !important;
-    outline:none !important;
 }
 .section-5-head{
     font-size: 2.5rem;
@@ -240,4 +243,110 @@ border-radius: 10px !important;
   }
 
 
- 
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+  /* Reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Color Variables */
+  :root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+    --left-color: var(--yellow);
+    --right-color: var(--dark);
+  }
+  
+  /* Base Styles */
+  .bodydiv,
+  .maindiv {
+    background-color: var(--dark);
+    height: 100vh;
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Typography */
+  .hero-wrapper,
+  .hero-side .title,
+  .cool > .letter {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Layout */
+  .hero-wrapper,
+  .hero-side {
+    height: 100%;
+  }
+  
+  .hero-side {
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* Hero Titles */
+  .hero-side .title {
+    font-size: 8vw;
+    margin: 0px 10vw;
+    width: 80vw;
+  }
+  
+  /* Cool Text */
+  .hero-side .cool {
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+  
+  .cool > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+  }
+  
+  /* Hover Effects */
+  .cool:hover > .letter {
+    transition-duration: 800ms;
+  }
+  
+  .cool:hover > .letter:nth-child(n) {
+    transform: translate(0%, 20%) rotate(-3deg);
+  }
+  
+  /* Side Specific Styles */
+  #left-side {
+    background-color: var(--left-color);
+    width: 90%;
+    z-index: 2;
+    transition: 0.15s;
+    color: white;
+  }
+  
+  #left-side .cool {
+    color: var(--right-color);
+  }
+  
+  #right-side {
+    background-color: var(--right-color);
+  }
+  
+  #right-side .title {
+    color: var(--yellow);
+  }
+  
+  #right-side .cool,
+  #last-name {
+    color: white;
+  }
+  
+  #first-name {
+    color: var(--dark);
+  }
+  
