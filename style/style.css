@@ -40,20 +40,55 @@ font-size: 1rem;
 }
 .section-2{
     background-color: #f0f0e6;
-    height: 70vh;
+    /* height: 70vh; */
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .section-4{
     background-color: #f0f0e6;
+
+
+
+    background-image: url("https://aspen-48.github.io/pomo-assets/bgs/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background:url('http://codingstella.com/wp-content/uploads/2024/01/download-7.jpeg') no-repeat; */
+  
+ 
+    
 }
 .section-5{
     background-color: #07374a;
 }
 
+
 .section-3{
     background-color: #fe905f;
+   
+  
+ 
+      --s: 20px; /* control the size */
+      --c1: #CC2A41;
+      --c2: #351330;
+      
+      --_g: #0000 24%,
+        var(--c2) 26% 34%,var(--c1) 36% 44%,
+        var(--c2) 46% 54%,var(--c1) 56% 64%,
+        var(--c2) 66% 74%,#0000 76%;
+      background:
+        radial-gradient(100% 100% at 100% 0,var(--_g)),
+        radial-gradient(100% 100% at 0 100%,var(--_g)),
+        radial-gradient(var(--c2) 14%,var(--c1) 16%) 
+         calc(var(--s)/2) calc(var(--s)/2);
+      background-size: var(--s) var(--s);
+    
+    
+    
+    
 }
 /* color */
 .whitecolour{
@@ -66,11 +101,24 @@ font-size: 1rem;
     font-family: "Poppins", sans-serif;
 }
 
+.sec2-h1{
+font-size: 60px;
+background-color: #f0f0e6;
+}
+.sec2-p{
+  font-size: 20px;
+  background-color: #f0f0e6;
+}
 
 /* .navbar */
 .navbar-nav a:hover {
     border-bottom: 2px solid #f0f0e6;
     
+  }
+
+  .sec3-h1{
+    font-size: 50px;
+    color: #fffff2;
   }
 .navbar-nav a {
     text-decoration: none !important;
@@ -96,8 +144,9 @@ font-size: 1rem;
 
 /*  */
 .skillsname{
-    color: black;
+    color: #fffff2;
     font-weight: 500 ;
+    font-size: 20px !important;
 }
 
 @keyframes animate {
@@ -118,6 +167,9 @@ font-size: 1rem;
   
   .progress-line .python {
       width: 65%;
+    }
+    .progress-line .EXPRESS {
+      width: 80%;
     }
   
   .progress-line .javascript {
@@ -180,7 +232,7 @@ font-size: 1rem;
   
   .bar .progress-line span {
     position: absolute;
-    background: #221f1d;
+    background: #252525;
     height: 100%;
     border-radius: 10px;
     transform: scaleX(0);
@@ -217,13 +269,22 @@ font-size: 1rem;
     align-items: center;
 } */
 .card{ 
-  background: linear-gradient(45deg, rgba(#6D80FE,1) 0%, rgba(#23D2FD,1) 100%) !important;
-	box-shadow: 0 5px 20px rgba(#23D2FD,.3) !important;
+  background-color: rgba(255, 255, 255, 0.2 )!important;
+  backdrop-filter: blur(3px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.05) !important;
+
+
+
+
 }
 .btn{
     width: 230px;
-    background-color: #40cab5 !important;
+    background-color: rgba(255, 255, 255, 0.4) !important;
     border-radius: 10px !important;
+    border: none !important;
+    color: #141413 !important;
 }
 .section-5-head{
     font-size: 2.5rem;
@@ -349,4 +410,37 @@ font-size: 1rem;
   #first-name {
     color: var(--dark);
   }
+  
+  
+  /* CSS */
+  .mycv {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .mycv:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .mycv:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
   

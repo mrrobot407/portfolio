@@ -14,6 +14,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -44,7 +45,9 @@
               <a class="nav-link whitecolour" href="#section5">Contact</a>
             </div>
           </div>
+          
         </div>
+        
       </nav>
     </header>
     <!-- <section class="section-1 " id="section1">
@@ -103,12 +106,12 @@
 
 
     <!-- section-2 -->
-    <section class="section-2  " id="section2">
+    <section class="section-2  pattern-vertical-lines-lg " id="section2">
       <div class="container pb-5 pt-5">
         <div class="row justify-content-center">
           <div class="col-sm-10">
-            <h1 class="text-center font-pop" data-aos="fade-right">About Me</h1>
-            <p class="text-center mt-4 font-pop " data-aos="fade-right">
+            <h1 class="text-center font-pop " data-aos="fade-right"><SPAN class="sec2-h1">About Me</SPAN></h1>
+            <p class="text-center mt-4 font-pop  sec2-p" data-aos="fade-right">
               A passionate Front-End Developer with a strong foundation in
               software coding, Linux, and Microsoft Excel. Proven ability to
               design and implement interactive websites and applications,
@@ -120,15 +123,21 @@
               that meet business needs and improve user engagement.
             </p>
           </div>
+          
         </div>
+       <div class="container mt-4">
+        <div class="text-center">
+          <button class="mycv" onclick="downloadCV()">Download CV</button>
+        </div>
+       </div>
       </div>
     </section>
     <!-- section3 -->
-    <section class="section-3" id="section3">
-      <div class="container pb-5 pt-5">
+    <section class="section-3 " id="section3">
+      <div class="container pb-3 pt-5">
         <div class="row justify-content-center">
           <div class="col-sm-10">
-            <h1 class="text-center font-pop section-1-head" data-aos="fade-right"> My Skills</h1>
+            <h1 class="text-center font-pop section-1-head sec3-h1" data-aos="fade-right"> My Skills</h1>
            
           </div>
         </div>
@@ -178,6 +187,13 @@
                     <div class="progress-line"><span class="python"></span></div>
 
                 </div>
+                  <div class="bar">
+                    <div class="info">
+                      <span class="skillsname">EXPRESS JS</span>
+                    </div>
+                    <div class="progress-line"><span class="EXPRESS"></span></div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -186,11 +202,11 @@
       </div>
       </div>
     </section>
-    <section class="section-4 pb-5" id="section4">
+    <section class="section-4 pb-5  " id="section4" >
       <div class="container pb-5 pt-5">
         <div class="row justify-content-center" data-aos="fade-left">
           <div class="col-sm-10">
-            <h1 class="text-center font-pop section-1-head"> My Projects</h1>
+            <h1 class="text-center font-pop section-1-head COLOR-TEXT"> My Projects</h1>
            
           </div>
         </div>
@@ -220,7 +236,7 @@ justify-content-center align-item-center  flex-wrap">
     <div class="card-body">
       <h5 class="card-title font-pop">MR robot webiste (using react )</h5>
       <p class="card-text font-pop">
-        "I created my first webpage using React, featuring a Mr. Robot theme. It was an exciting journey of learning and creativity. With React, I built a platform that reflects the essence of the show. This project marks the beginning of my web development journey, and I'm eager to explore more."</p>
+        "Launched a React site with Mr. Robot theme, featuring a shopping cart and Linux-style UI. Excited to delve deeper into web development."</p>
       <a href="https://mrrobot407.netlify.app/" class="btn btn-primary font-pop">Link</a>
     </div>
   </div>
@@ -249,6 +265,7 @@ justify-content-center align-item-center  flex-wrap">
           <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i> Instagram</a></div>
           </div>
         </div>
+      
       </div>
      
     </section>
@@ -265,5 +282,9 @@ justify-content-center align-item-center  flex-wrap">
     </script>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/Olottiefiles/lottie
+player@latest/dist/lottie-player.js"></script> 
+
+
   </body>
 </html>

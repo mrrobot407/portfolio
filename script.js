@@ -51,3 +51,25 @@ document
   .getElementById("backend")
   .addEventListener("mousemove", animateTextChange);
 enhanceTextWithSpans("frontend");
+
+
+function downloadCV() {
+  // Replace 'cv.pdf' with the actual file name and extension of your CV
+  var cvUrl = './images/cv.pdf';
+  
+  // Create a temporary link element
+  var link = document.createElement('a');
+  link.href = cvUrl;
+  
+  // Set the download attribute to the file name
+  link.download = 'cv.pdf';
+  
+  // Append the link to the body
+  document.body.appendChild(link);
+  
+  // Programmatically click the link to trigger the download
+  link.click();
+  
+  // Remove the link from the body after the download starts
+  document.body.removeChild(link);
+}
