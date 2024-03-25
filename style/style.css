@@ -55,23 +55,72 @@ font-size: 1rem;
 }
 .section-4{
     /* background-color: #f0f0e6; */
-    background: linear-gradient(to right, #FF004C,  #0099FF);
+    /* background: linear-gradient(to right, #FF004C,  #0099FF); */
 
-
+    /* width: 100vw;
+    height: 100vh; */
+    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
 
 
     /* background-image: url("https://aspen-48.github.io/pomo-assets/bgs/bg.jpg"); */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     /* background:url('http://codingstella.com/wp-content/uploads/2024/01/download-7.jpeg') no-repeat; */
   
  
     
 }
+
+
+
+
+
+
+
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section-5{
     background-color: #262020;
 }
+
 
 
 .section-3{
@@ -79,7 +128,7 @@ font-size: 1rem;
    
   
  
-      --s: 20px; /* control the size */
+      /* --s: 20px; 
       --c1: #CC2A41;
       --c2: #351330;
       
@@ -92,7 +141,7 @@ font-size: 1rem;
         radial-gradient(100% 100% at 0 100%,var(--_g)),
         radial-gradient(var(--c2) 14%,var(--c1) 16%) 
          calc(var(--s)/2) calc(var(--s)/2);
-      background-size: var(--s) var(--s);
+      background-size: var(--s) var(--s); */
     
     
     
@@ -126,7 +175,12 @@ background-color: #f0f0e6;
 
   .sec3-h1{
     font-size: 50px;
-    color: #fffff2;
+    /* color: #fffff2; */
+    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 6s ease infinite;
   }
 .navbar-nav a {
     text-decoration: none !important;
@@ -256,7 +310,7 @@ background-color: #f0f0e6;
     .skills-bar .bar .progress-line {
     position: relative;
     height: 10px;
-    width: 250px !important;
+    width: 300px !important;
     background: #f1eded;
     border-radius: 10px;
     transform: scaleX(0);
@@ -305,9 +359,13 @@ background-color: #f0f0e6;
 }
 .section-5-head{
     font-size: 2.5rem;
-    font-weight: 400;
-    color: #f0f0e6;
-    padding-bottom: 0.5rem;
+    font-weight: 700;
+    /* color: #f0f0e6; */
+    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 6s ease infinite;
 }
 .contact-content a {
     text-decoration: none;
