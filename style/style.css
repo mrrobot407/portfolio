@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Manuale:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +14,9 @@
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
-   font-family: 'poppins';
+   /* font-family: 'poppins'; */
+   font-family: "IBM Plex Mono", monospace !important;
+
 }
 
 
@@ -22,16 +28,20 @@ body , html{
 }
 
 .font-pop{
-    font-family: "Poppins", sans-serif !important;
+    /* font-family: "Poppins", sans-serif !important; */
+    font-family: "IBM Plex Mono", monospace !important;
+
 }
 .navbar{
     background-color: rgb(253, 216, 53) !important;
-  
+    font-family: "IBM Plex Mono", monospace !important;
   
  
   
   }
-
+.font-size{
+  font-size: 55px;
+}
 
 .section-1{
     background-color: #fe905f;
@@ -119,13 +129,18 @@ font-size: 1rem;
 
 .section-5{
     background-color: #262020;
+   background-attachment: fixed;
 }
 
 
 
+
+
+/* paralle */
+
 .section-3{
     background-color: #fe905f;
-   
+    background-attachment: fixed;
   
  
       /* --s: 20px; 
@@ -174,13 +189,13 @@ background-color: #f0f0e6;
   }
 
   .sec3-h1{
-    font-size: 50px;
-    /* color: #fffff2; */
-    background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+    font-size: 60px;
+    color: #252525;
+    /* background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradient-animation 6s ease infinite;
+    animation: gradient-animation 6s ease infinite; */
   }
 .navbar-nav a {
     text-decoration: none !important;
@@ -379,7 +394,7 @@ background-color: #f0f0e6;
   }
 
 
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+  
 
   /* Reset */
   * {
@@ -400,7 +415,7 @@ background-color: #f0f0e6;
   .bodydiv,
   .maindiv {
     background-color: var(--dark);
-    height: 100vh;
+    height: 100dvh;
     
   }
   
@@ -412,8 +427,10 @@ background-color: #f0f0e6;
   .hero-wrapper,
   .hero-side .title,
   .cool > .letter {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "IBM Plex Mono", monospace !important;
   }
+  
   
   /* Layout */
   .hero-wrapper,
@@ -489,13 +506,17 @@ background-color: #f0f0e6;
   
   /* CSS */
   .mycv {
-    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    /* background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+     */
+     background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+     background-size: 180% 180%;
+     animation: gradient-animation 3s ease infinite;
     border: 0;
     border-radius: 12px;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    /* font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; */
     font-size: 16px;
     font-weight: 500;
     line-height: 2.5;

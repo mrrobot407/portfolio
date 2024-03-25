@@ -73,3 +73,5 @@ function downloadCV() {
   // Remove the link from the body after the download starts
   document.body.removeChild(link);
 }
+
+// paralex
